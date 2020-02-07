@@ -53,7 +53,139 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+/*variables start*/
+@blue-gradient: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+
+@pink-gradient: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+
+@cursive-font: 'Pacifico', cursive;
+
+@book-font: 'Roboto Slab', serif;
+
+@phone: ~"(max-width: 500px)";
+
+
+.container{
+	display:flex;
 }
+		
+
+
+// /*mix in*/ 
+
+.section-flexbox{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+
+}
+
+.info-boxes{
+		background: #9DA6A6;
+		margin: 1%;
+		padding: 20px;
+		height: 400px;
+		width: 400px;
+		text-align: center;
+		color: white;
+		font-family: @book-font;
+	}
+
+/*mix in*/ 
+
+
+html, body {
+	height: 100%;
+	background: ;
+}
+
+h1 {
+
+    font-size: 50px;
+	font-family: @cursive-font;
+	text-align: center;
+	color: grey; 
+	
+}
+
+h2{
+	color: white; 
+	text-align: center;
+	font-family: @cursive-font;
+	font-size: 60px;
+
+}
+
+h3{
+	font-size: 20px;
+	font-family: @book-font;
+	text-decoration: underline;
+}
+
+.title {
+	margin: 1%;
+	padding: 10px;
+	}
+
+	nav {
+		background: @pink-gradient;
+		display: flex;
+		font-family: @book-font;
+		justify-content: space-evenly;
+		padding: 20px;
+
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+			font-size: 20px;	
+		}
+
+
+
+
+	.intro-box{
+		display: flex;
+		flex-direction: column;
+		padding: 10%;
+		background: @blue-gradient;
+		justify-content: center;
+
+				button{
+					width: 10%;
+					align-self: center;
+					margin-top: 30px;
+					
+				}
+		
+	}
+		
+
+		
+	
+	.flexbox {
+		.section-flexbox();
+		border: solid black 10px;
+
+		@media (@phone) {
+			flex-direction: column;
+		}
+	}	
+
+
+			div{
+				.info-boxes();
+		
+			}
+
+				
+
+		
+
+			
+
+
+
 
